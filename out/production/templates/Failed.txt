@@ -1,0 +1,406 @@
+START - TEST 34
+------------------------------
+BTree<Integer> generatedTree = new BTree<Integer>(2);
+generatedTree.insert2pass(52);
+generatedTree.insert2pass(90);
+generatedTree.insert2pass(46);
+generatedTree.insert2pass(15);
+generatedTree.insert2pass(20);
+generatedTree.insert2pass(24);
+generatedTree.insert2pass(47);
+generatedTree.insert2pass(37);
+generatedTree.insert2pass(54);
+generatedTree.insert2pass(34);
+generatedTree.insert2pass(94);
+generatedTree.insert2pass(44);
+generatedTree.insert2pass(69);
+generatedTree.insert2pass(27);
+generatedTree.insert2pass(64);
+generatedTree.insert2pass(89);
+generatedTree.insert2pass(28);
+generatedTree.insert2pass(45);
+------------------------------
+
+└── 46
+    ├── 20, 34
+    │   ├── 15
+    │   ├── 24, 27, 28
+    │   └── 37, 44, 45
+    └── 52, 64, 90
+        ├── 47
+        ├── 54
+        ├── 69, 89
+        └── 94
+
+------------------------------
+
+generatedTree.delete(24)
+generatedTree.delete(52)
+
+------------------------------
+
+└── 46
+    ├── 20, 34
+    │   ├── 15
+    │   ├── 27, 28
+    │   └── 37, 44, 45
+    └── 64, 90
+        ├── 47, 54
+        ├── 69, 89
+        └── 94
+
+
+------------------------------
+
+END - TEST 34
+
+
+
+START - TEST 81
+------------------------------
+BTree<Integer> generatedTree = new BTree<Integer>(2);
+generatedTree.insert2pass(73);
+generatedTree.insert2pass(58);
+generatedTree.insert2pass(27);
+generatedTree.insert2pass(95);
+generatedTree.insert2pass(48);
+generatedTree.insert2pass(34);
+generatedTree.insert2pass(31);
+generatedTree.insert2pass(79);
+------------------------------
+
+└── 34, 58
+    ├── 27, 31
+    ├── 48
+    └── 73, 79, 95
+
+------------------------------
+
+generatedTree.delete(48)
+generatedTree.delete(31)
+generatedTree.delete(79)
+
+------------------------------
+
+└── 58
+    ├── 27, 34
+    └── 73, 95
+
+
+------------------------------
+
+END - TEST 81
+
+
+
+START - TEST 89
+------------------------------
+BTree<Integer> generatedTree = new BTree<Integer>(2);
+generatedTree.insert2pass(13);
+generatedTree.insert2pass(55);
+generatedTree.insert2pass(57);
+generatedTree.insert2pass(33);
+generatedTree.insert2pass(17);
+generatedTree.insert2pass(75);
+generatedTree.insert2pass(92);
+generatedTree.insert2pass(80);
+------------------------------
+
+└── 55, 75
+    ├── 13, 17, 33
+    ├── 57
+    └── 80, 92
+
+------------------------------
+
+generatedTree.delete(17)
+generatedTree.delete(13)
+generatedTree.delete(55)
+
+------------------------------
+
+└── 75
+    ├── 33, 57
+    └── 80, 92
+
+
+------------------------------
+
+END - TEST 89
+
+
+
+START - TEST 91
+------------------------------
+BTree<Integer> generatedTree = new BTree<Integer>(2);
+generatedTree.insert2pass(70);
+generatedTree.insert2pass(76);
+generatedTree.insert2pass(92);
+generatedTree.insert2pass(94);
+generatedTree.insert2pass(53);
+generatedTree.insert2pass(73);
+generatedTree.insert2pass(97);
+generatedTree.insert2pass(38);
+generatedTree.insert2pass(96);
+------------------------------
+
+└── 70, 76, 94
+    ├── 38, 53
+    ├── 73
+    ├── 92
+    └── 96, 97
+
+------------------------------
+
+generatedTree.delete(76)
+generatedTree.delete(94)
+
+------------------------------
+
+└── 70, 92
+    ├── 38, 53
+    ├── 73
+    └── 96, 97
+
+
+------------------------------
+
+END - TEST 91
+
+
+
+START - TEST 101
+------------------------------
+BTree<Integer> generatedTree = new BTree<Integer>(2);
+generatedTree.insert2pass(56);
+generatedTree.insert2pass(91);
+generatedTree.insert2pass(50);
+generatedTree.insert2pass(37);
+generatedTree.insert2pass(95);
+generatedTree.insert2pass(49);
+generatedTree.insert2pass(18);
+generatedTree.insert2pass(85);
+generatedTree.insert2pass(89);
+generatedTree.insert2pass(80);
+generatedTree.insert2pass(22);
+generatedTree.insert2pass(54);
+generatedTree.insert2pass(12);
+------------------------------
+
+└── 56
+    ├── 22, 49
+    │   ├── 12, 18
+    │   ├── 37
+    │   └── 50, 54
+    └── 91
+        ├── 80, 85, 89
+        └── 95
+
+------------------------------
+
+generatedTree.delete(91)
+generatedTree.delete(12)
+generatedTree.delete(22)
+
+------------------------------
+
+└── 56
+    ├── 49
+    │   ├── 18, 37
+    │   └── 50, 54
+    └── 89
+        ├── 80, 85
+        └── 95
+
+
+------------------------------
+
+END - TEST 101
+
+
+
+START - TEST 132
+------------------------------
+BTree<Integer> generatedTree = new BTree<Integer>(2);
+generatedTree.insert2pass(66);
+generatedTree.insert2pass(79);
+generatedTree.insert2pass(58);
+generatedTree.insert2pass(97);
+generatedTree.insert2pass(73);
+generatedTree.insert2pass(36);
+generatedTree.insert2pass(61);
+generatedTree.insert2pass(20);
+------------------------------
+
+└── 58, 66
+    ├── 20, 36
+    ├── 61
+    └── 73, 79, 97
+
+------------------------------
+
+generatedTree.delete(36)
+generatedTree.delete(58)
+
+------------------------------
+
+└── 66
+    ├── 20, 61
+    └── 73, 79, 97
+
+
+------------------------------
+
+END - TEST 132
+
+
+
+START - TEST 157
+------------------------------
+BTree<Integer> generatedTree = new BTree<Integer>(2);
+generatedTree.insert2pass(59);
+generatedTree.insert2pass(30);
+generatedTree.insert2pass(20);
+generatedTree.insert2pass(61);
+generatedTree.insert2pass(74);
+generatedTree.insert2pass(32);
+generatedTree.insert2pass(21);
+generatedTree.insert2pass(91);
+generatedTree.insert2pass(71);
+generatedTree.insert2pass(80);
+generatedTree.insert2pass(44);
+generatedTree.insert2pass(58);
+generatedTree.insert2pass(53);
+generatedTree.insert2pass(87);
+generatedTree.insert2pass(98);
+generatedTree.insert2pass(86);
+generatedTree.insert2pass(18);
+------------------------------
+
+└── 61
+    ├── 30, 44
+    │   ├── 18, 20, 21
+    │   ├── 32
+    │   └── 53, 58, 59
+    └── 74, 87
+        ├── 71
+        ├── 80, 86
+        └── 91, 98
+
+------------------------------
+
+generatedTree.delete(71)
+generatedTree.delete(80)
+generatedTree.delete(53)
+
+------------------------------
+
+└── 61
+    ├── 30, 44
+    │   ├── 18, 20, 21
+    │   ├── 32
+    │   └── 58, 59
+    └── 87
+        ├── 74, 86
+        └── 91, 98
+
+
+------------------------------
+
+END - TEST 157
+
+
+
+START - TEST 167
+------------------------------
+BTree<Integer> generatedTree = new BTree<Integer>(2);
+generatedTree.insert2pass(27);
+generatedTree.insert2pass(65);
+generatedTree.insert2pass(79);
+generatedTree.insert2pass(89);
+generatedTree.insert2pass(57);
+generatedTree.insert2pass(83);
+generatedTree.insert2pass(63);
+generatedTree.insert2pass(43);
+generatedTree.insert2pass(87);
+generatedTree.insert2pass(58);
+generatedTree.insert2pass(21);
+generatedTree.insert2pass(75);
+generatedTree.insert2pass(11);
+generatedTree.insert2pass(40);
+generatedTree.insert2pass(45);
+generatedTree.insert2pass(39);
+generatedTree.insert2pass(15);
+------------------------------
+
+└── 65
+    ├── 27, 43, 57
+    │   ├── 11, 15, 21
+    │   ├── 39, 40
+    │   ├── 45
+    │   └── 58, 63
+    └── 83
+        ├── 75, 79
+        └── 87, 89
+
+------------------------------
+
+generatedTree.delete(45)
+generatedTree.delete(15)
+generatedTree.delete(40)
+
+------------------------------
+
+└── 65
+    ├── 27, 57
+    │   ├── 11, 21
+    │   ├── 39, 43
+    │   └── 58, 63
+    └── 83
+        ├── 75, 79
+        └── 87, 89
+
+
+------------------------------
+
+END - TEST 167
+
+
+
+START - TEST 171
+------------------------------
+BTree<Integer> generatedTree = new BTree<Integer>(2);
+generatedTree.insert2pass(89);
+generatedTree.insert2pass(67);
+generatedTree.insert2pass(33);
+generatedTree.insert2pass(69);
+generatedTree.insert2pass(64);
+generatedTree.insert2pass(75);
+generatedTree.insert2pass(30);
+generatedTree.insert2pass(49);
+------------------------------
+
+└── 33, 67
+    ├── 30
+    ├── 49, 64
+    └── 69, 75, 89
+
+------------------------------
+
+generatedTree.delete(67)
+generatedTree.delete(89)
+generatedTree.delete(33)
+
+------------------------------
+
+└── 64
+    ├── 30, 49
+    └── 69, 75
+
+
+------------------------------
+
+END - TEST 171
+
+
+
